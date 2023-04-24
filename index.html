@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <main>
+        <article>
+          <h2>Just enter a valid city name!</h2>
+        </article>
+        
+        
+    </main>
+
+    <form>
+        <label for="location-input">Enter a location:</label>
+        <input type="text" id="location-input" name="location" onchange="checkInput()" placeholder="e.g. New York City" required >
+        <button type="submit" id="submit">Get Weather</button>
+
+    </form>
+
+    <section id="weather">
+        <div class="container">
+          <h2>Weather Forecast</h2>
+          
+          <div class="weather-info">
+            <p class="temperature"></p>
+            <p class="description"></p>
+          </div>
+        </div>
+      </section>
+      
+  
+      
+    <footer>
+        &copy; 2023 - Berkin Öztürk
+    </footer>
+      
+    <script src="script.js"></script>
+</body>
+</html>
